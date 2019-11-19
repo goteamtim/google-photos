@@ -1,0 +1,28 @@
+<% include ../partials/head %>
+
+<% include ../partials/dialogs %>
+<section class="sample-content">
+    <h2>Settings</h2>
+    <p class="subhead mdl-color-text--grey-700">Load photos into your photo frame from your Google Photos albums.</p>
+
+
+    <!-- Numeric Textfield with Floating Label -->
+    <form action="#">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+            <label class="mdl-textfield__label" for="sample4">Timeout...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+
+        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+            <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+            <span class="mdl-switch__label">Show weather</span>
+        </label>
+    </form>
+</section>
+
+
+
+<% include ../partials/js %>
+
+<% include ../partials/footer %>

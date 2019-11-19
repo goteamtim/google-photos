@@ -5,11 +5,7 @@ persist-storage/
 persist-mediaitemcache/
 persist-albumcache/
 .DS_STORE
-<<<<<<< HEAD:.gitignore
-REST/PhotoFrame/config.js
+REST/PhotoFrame/config.jsmamm
 REST/PhotoFrame/config.js
 */config.js
 config.js
-=======
-config.js
->>>>>>> 0a6aa851df168d38d379535c7ae234640567a035:REST/PhotoFrame/.gitignore
