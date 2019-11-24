@@ -111,8 +111,8 @@ function listAlbums() {
         const addToPhotoFrameButton =
             $('<button />')
                 .addClass(
-                    'mdl-button mdl-js-button mdl-button--raised mdl-button--accent')
-                .text('Add to frame');
+                    'mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored')
+                .html('<i class="material-icons">add</i>');
         linkToAddToPhotoFrame.append(addToPhotoFrameButton);
 
         // The 'open in Google Photos' link.

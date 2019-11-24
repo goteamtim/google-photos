@@ -32,6 +32,8 @@ const winston = require('winston');
 const app = express();
 const fileStore = sessionFileStore(session);
 const server = http.Server(app);
+// var sqlite3 = require('sqlite3').verbose()
+// var db = new sqlite3.Database(':memory:')
 
 // Use the EJS template engine
 app.set('view engine', 'ejs');
@@ -218,6 +220,11 @@ app.get('/album', (req, res) => {
   renderIfAuthenticated(req, res, 'pages/album');
 });
 
+// Loads the settings page if the user is authenticated.
+// This page displays a list of settings available to the user.
+app.get('/settings', (req, res) => {
+  renderIfAuthenticated(req, res, 'pages/settings');
+});
 
 // Handles form submissions from the search page.
 // The user has made a selection and wants to load photos into the photo frame
@@ -377,6 +384,7 @@ app.get('/getQueue', async (req, res) => {
 // Start the server
 server.listen(config.port, () => {
   console.log(`App listening on port ${config.port}`);
+  console.log(`http://localhost:${config.port}`);
   console.log('Press Ctrl+C to quit.');
 });
 
